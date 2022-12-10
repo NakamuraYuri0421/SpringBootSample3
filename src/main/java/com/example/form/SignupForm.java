@@ -28,11 +28,7 @@ public class SignupForm {
 	
 	@NotBlank
 	private String userName;
-<<<<<<< feature/6.3.1
-	
-=======
-
->>>>>>> feature/6.2.1
+  
 	@DateTimeFormat(pattern="yyyy/MM/dd")
 	@NotNull
 	private Date birthday;
