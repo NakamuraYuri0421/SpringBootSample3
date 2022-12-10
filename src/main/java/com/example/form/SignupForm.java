@@ -29,29 +29,12 @@ public class SignupForm {
 	@NotBlank(groups=ValidGroup1.class)
 	private String userName;
   
-	@NotBlank
-	@Email
-	private String userId;
-	
-	@NotBlank
-	@Length(min=4,max=100)
-	@Pattern(regexp="^[a-zA-Z0-9]+$")
-	private String password;
-	
-	@NotBlank
-	private String userName;
-  
 	@DateTimeFormat(pattern="yyyy/MM/dd")
 	@NotNull(groups=ValidGroup1.class)
 	private Date birthday;
 	
 	@Min(value=20,groups=ValidGroup2.class)
 	@Max(value=100,groups=ValidGroup2.class)
-	private Integer age;
-	
-	@NotNull(groups=ValidGroup1.class)
-	@Min(20)
-	@Max(100)
 	private Integer age;
 	
 	@NotNull
