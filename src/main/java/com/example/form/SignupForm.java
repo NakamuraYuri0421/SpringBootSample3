@@ -28,7 +28,7 @@ public class SignupForm {
 	
 	@NotBlank(groups=ValidGroup1.class)
 	private String userName;
-	
+  
 	@DateTimeFormat(pattern="yyyy/MM/dd")
 	@NotNull(groups=ValidGroup1.class)
 	private Date birthday;
@@ -37,7 +37,7 @@ public class SignupForm {
 	@Max(value=100,groups=ValidGroup2.class)
 	private Integer age;
 	
-	@NotNull(groups=ValidGroup1.class)
+	@NotNull
 	private Integer gender;
 
 }
