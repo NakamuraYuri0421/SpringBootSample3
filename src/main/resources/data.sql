@@ -3,7 +3,7 @@ INSERT INTO employee (id,name,age) VALUES('1','Tom',30);
 /*ユーザーマスタ*/
 INSERT INTO m_user(
 	user_id,password,user_name,birthday,age,gender,department_id,role)
-	VALUES ('system@co.jp','$2a$10$X2THMtG5IYi45.qMthHM7embSSa9Wnn1iwiXIe1AMf95HTXb6K5Km	','システム管理者','2000-01-01',21,1,1,'ROLE_ADMIN'),
+	VALUES ('system@co.jp','$2a$10$X2THMtG5IYi45.qMthHM7embSSa9Wnn1iwiXIe1AMf95HTXb6K5Km','システム管理者','2000-01-01',21,1,1,'ROLE_ADMIN'),
 	('user@co.jp','$2a$10$X2THMtG5IYi45.qMthHM7embSSa9Wnn1iwiXIe1AMf95HTXb6K5Km	','ユーザー1','2000-01-01',21,2,2,'ROLE_GENERAL');
 
 /*部署マスタ*/
