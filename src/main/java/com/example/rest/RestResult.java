@@ -14,6 +14,6 @@ public class RestResult {
 	/**エラーマップ
 	 * Key:フィールド名
 	 * value:エラーメッセージ
-	 * */
+	 **/
 	private Map<String,String> errors;
 }
