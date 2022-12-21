@@ -62,6 +62,12 @@ public class UserServiceImpl2 implements UserService{
 	@Transactional
 	@Override
 	public void updateUserOne(String userId,String password,String userName) {
+		
+		//パスワード暗号化
+		String encryptPassword = encoder.encode(password);
+		
+		//ユーザー更新
+		repository.updateUser(userId, encryptPassword, userName);
 	}
 	
 	/**ユーザー削除（1件）*/
@@ -76,6 +82,6 @@ public class UserServiceImpl2 implements UserService{
 	public MUser getLoginUser(String userId) {
 		Optional<MUser> option = repository.findById(userId);
 		MUser user = option.orElse(null);
-		return user;
+		return repository.findLoginUser(userId);
 	}
 }
